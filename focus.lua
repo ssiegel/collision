@@ -119,6 +119,7 @@ local function bydirection(dir, c, swap,max)
             local t = tag.selected(other.screen) --TODO get index
             c.screen = other.screen
             c:tags({t})
+            c:raise()
           end
         end
       end
